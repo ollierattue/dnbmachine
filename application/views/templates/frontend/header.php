@@ -3,7 +3,7 @@
 
 <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <title>dnb machine - from birth to release</title>
+        <title>dnb machine - <?php echo SLOGAN; ?></title>
         <meta name="description" content="<?php echo META_DESCRIPTION; ?>" />
         <meta http-equiv="X-UA-Compatible" content="IE=8" />
 
