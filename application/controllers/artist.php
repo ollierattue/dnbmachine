@@ -36,6 +36,8 @@ class Artist extends CI_Controller
 												'artist_soundcloud' 	=> NULL,
 												'artist_twitter' 		=> NULL,
 												'artist_facebook' 		=> NULL,
+												'artist_myspace' 		=> NULL,
+												'artist_disogs' 		=> NULL,
 												'artist_website' 		=> NULL
 												);
 				
@@ -69,6 +71,8 @@ class Artist extends CI_Controller
 		$this->form_validation->set_rules('artist_soundcloud', "Artist's soundcloud", 'max_length[500]');			
 		$this->form_validation->set_rules('artist_twitter', "Artist's twitter", 'max_length[50]');
 		$this->form_validation->set_rules('artist_facebook', "Artist's facebook", 'max_length[100]');
+		$this->form_validation->set_rules('artist_myspace', "Artist's myspace", 'max_length[200]');
+		$this->form_validation->set_rules('artist_disogs', "Artist's disogs", 'max_length[200]');
 		$this->form_validation->set_rules('artist_website', "Artist's website", 'max_length[500]');
 
 		$this->form_validation->set_error_delimiters('<br /><span class="error">', '</span>');
@@ -87,7 +91,9 @@ class Artist extends CI_Controller
 					       	'artist_soundcloud' => set_value('artist_soundcloud'),
 					       	'artist_twitter' 	=> set_value('artist_twitter'),
 							'artist_facebook' 	=> set_value('artist_facebook'),
-							'artist_website' 	=> set_value('artist_website'),
+							'artist_myspace' 	=> set_value('artist_myspace'),
+							'artist_disogs' 	=> set_value('artist_disogs'),
+							'artist_website' 	=> set_value('artist_website')
 						);
 					
 			if ($this->artist_model->save($form_data, $action, $artist_url_slug, $artist_id))

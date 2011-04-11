@@ -13,7 +13,7 @@ class Track_model extends CI_Model
 	
 	// --------------------------------------------------------------------
 	
-	function get($track_status = NULL)
+	function get($track_status = NULL, $track_url_slug = NULL)
 	{
 		$this->db->select('*');
        	$this->db->from($this->_table['tracks']);
@@ -24,6 +24,12 @@ class Track_model extends CI_Model
 		{
 			$this->db->where("{$this->_table['track_statuses']}.track_status_slug", $track_status);
 		}
+		
+		if ($track_url_slug)
+		{
+			$this->db->where('track_url_slug', $track_url_slug);
+		}
+		
 		
 		return $this->db->get();
 	}
@@ -50,8 +56,8 @@ class Track_model extends CI_Model
 			case "edit":
 				$track_data["track_modified"] = date("Y-m-d H:i:s");
 				
-				$this->db->where('artist_url_slug', $artist_url_slug);
-				$this->db->update($this->_table['artists'], $artist_data);
+				$this->db->where('track_url_slug', $track_url_slug);
+				$this->db->update($this->_table['tracks'], $track_data);
 				return TRUE;		
 			break;
 		}

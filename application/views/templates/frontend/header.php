@@ -23,7 +23,7 @@
                 <h1><a href="<?php echo base_url(); ?>">dnb machine</a></h1>
 			
 				<?php if ($this->simpleloginsecure->is_logged_in()): ?>
-				<span class="login"><a href="<?php echo base_url(); ?>dashboard">dashboard</a> | <a href="<?php echo base_url(); ?>logout">log out</a></span>
+				<span class="login"><a href="<?php echo base_url(); ?>logout">log out</a></span>
 				<?php else: ?>
 				<span class="login"><a href="<?php echo base_url(); ?>login">log in</a></span>
 				<?php endif; ?>

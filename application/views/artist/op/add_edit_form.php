@@ -26,13 +26,25 @@ echo form_open("artist/op/{$action}/{$artist_data['artist_url_slug']}", $attribu
 <p>
         <label for="artist_facebook">Facebook (just account name)</label>
         <?php echo form_error('artist_facebook'); ?>
-        <br /><input id="artist_facebook" type="text" name="artist_facebook" maxlength="50" value="<?php echo set_value('artist_facebook', $artist_data['artist_facebook']); ?>"  />
+        <br /><input id="artist_facebook" type="text" name="artist_facebook" maxlength="100" value="<?php echo set_value('artist_facebook', $artist_data['artist_facebook']); ?>"  />
 </p>
+
+<p>
+        <label for="artist_mysapce">Myspace (just account name)</label>
+        <?php echo form_error('artist_myspace'); ?>
+        <br /><input id="artist_myspace" type="text" name="artist_myspace" maxlength="200" value="<?php echo set_value('artist_myspace', $artist_data['artist_myspace']); ?>"  />
+</p>
+
+<p>
+        <label for="artist_disogs">Disogs (just account name)</label>
+        <?php echo form_error('artist_disogs'); ?>
+        <br /><input id="artist_disogs" type="text" name="artist_disogs" maxlength="200" value="<?php echo set_value('artist_disogs', $artist_data['artist_disogs']); ?>"  />
+</p>		
 	
 <p>
         <label for="artist_website">Website (including http://)</label>
         <?php echo form_error('artist_website'); ?>
-        <br /><input id="artist_website" type="text" name="artist_website" maxlength="50" value="<?php echo set_value('artist_website', $artist_data['artist_website']); ?>"  />
+        <br /><input id="artist_website" type="text" name="artist_website" maxlength="500" value="<?php echo set_value('artist_website', $artist_data['artist_website']); ?>"  />
 </p>
 	
 <p>
@@ -40,7 +52,7 @@ echo form_open("artist/op/{$action}/{$artist_data['artist_url_slug']}", $attribu
 		if ($action == 'edit') $submit_button_copy = 'Save changes';
 		if ($action == 'add') $submit_button_copy = 'Add artist';
 		?>
-		<button type="submit"><?php echo $submit_button_copy?></button> <a href="<?php echo base_url(); ?>artists/view/all">or cancel</a>
+		<button type="submit"><?php echo $submit_button_copy?></button> <a href="<?php echo base_url(); ?>artist/view/all">or cancel</a>
 </p>
 
 <?php echo form_close(); ?>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 11, 2011 at 11:26 AM
+-- Generation Time: Apr 11, 2011 at 01:21 PM
 -- Server version: 5.0.51
 -- PHP Version: 5.2.5
 
@@ -33,6 +33,8 @@ CREATE TABLE IF NOT EXISTS `artists` (
   `artist_soundcloud` varchar(500) default NULL,
   `artist_twitter` varchar(50) default NULL,
   `artist_facebook` varchar(100) default NULL,
+  `artist_myspace` varchar(200) NOT NULL,
+  `artist_disogs` varchar(200) default NULL,
   `artist_website` varchar(500) default NULL,
   PRIMARY KEY  (`artist_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;

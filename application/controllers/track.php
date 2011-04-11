@@ -49,7 +49,7 @@ class Track extends CI_Controller
 			
 			case "edit":
 				
-				$result = $this->track_model->get($track_url_slug);
+				$result = $this->track_model->get(NULL, $track_url_slug);
 
 				if ($result->num_rows == 0)
 				{
