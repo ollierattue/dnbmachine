@@ -58,7 +58,7 @@ define('EMAIL_ERROR_LOG', FALSE);
 
 // Notifications
 
-define('ADMIN_EMAIL', 'orattue@toomanytabs.com');
+define('NOTIFICATION_EMAIL', 'orattue@toomanytabs.com');
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */
