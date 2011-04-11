@@ -16,7 +16,8 @@ class Artist_model extends CI_Model
 	function get()
 	{
 		$this->db->select('*');
-       	$this->db->from($this->_table['artists']);		
+       	$this->db->from($this->_table['artists']);
+		$this->db->order_by('artist_name', 'asc');
 		return $this->db->get();
 	}
 
