@@ -60,8 +60,6 @@ function is_valid_email($email)
 
 // --------------------------------------------------------------------
 
-// --------------------------------------------------------------------
-
 // Original PHP code by Chirp Internet: www.chirp.com.au 
 // Please acknowledge use of this code by including this header. 
 

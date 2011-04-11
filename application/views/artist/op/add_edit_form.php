@@ -12,25 +12,25 @@ echo form_open("artist/op/{$action}/{$artist_data['artist_url_slug']}", $attribu
 </p>
 
 <p>
-        <label for="artist_soundcloud">Artist's soundcloud</label>
+        <label for="artist_soundcloud">Soundcloud (just account name)</label>
         <?php echo form_error('artist_soundcloud'); ?>
         <br /><input id="artist_soundcloud" type="text" name="artist_soundcloud" maxlength="500" value="<?php echo set_value('artist_soundcloud', $artist_data['artist_soundcloud']); ?>"  />
 </p>
 
 <p>
-        <label for="artist_twitter">Artist's twitter</label>
+        <label for="artist_twitter">Twitter (just account name)</label>
         <?php echo form_error('artist_twitter'); ?>
         <br /><input id="artist_twitter" type="text" name="artist_twitter" maxlength="50" value="<?php echo set_value('artist_twitter', $artist_data['artist_twitter']); ?>"  />
 </p>
 
 <p>
-        <label for="artist_facebook">Artist's facebook</label>
+        <label for="artist_facebook">Facebook (just account name)</label>
         <?php echo form_error('artist_facebook'); ?>
         <br /><input id="artist_facebook" type="text" name="artist_facebook" maxlength="50" value="<?php echo set_value('artist_facebook', $artist_data['artist_facebook']); ?>"  />
 </p>
 	
 <p>
-        <label for="artist_website">Artist's website</label>
+        <label for="artist_website">Website (including http://)</label>
         <?php echo form_error('artist_website'); ?>
         <br /><input id="artist_website" type="text" name="artist_website" maxlength="50" value="<?php echo set_value('artist_website', $artist_data['artist_website']); ?>"  />
 </p>

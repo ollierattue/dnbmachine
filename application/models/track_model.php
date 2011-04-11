@@ -29,6 +29,37 @@ class Track_model extends CI_Model
 	}
 
 	// --------------------------------------------------------------------
+	
+	function save($track_data = array(), $action = NULL, $track_url_slug = NULL, &$track_id)
+	{
+		switch($action)
+		{
+			case "add":
+				$artist_data['track_url_slug'] = create_slug($track_data['track_name']);
+				$artist_data["track_added"]	= date("Y-m-d H:i:s");
+				
+				$this->db->insert($this->_table['tracks'], $track_data);
 
+				if ($this->db->affected_rows() == '1')
+				{
+					$track_id = $this->db->insert_id();
+					return TRUE;
+				}
+			break;
+
+			case "edit":
+				$artist_data["track_modified"] = date("Y-m-d H:i:s");
+				
+				$this->db->where('artist_url_slug', $artist_url_slug);
+				$this->db->update($this->_table['artists'], $artist_data);
+				return TRUE;		
+			break;
+		}
+
+		return FALSE;
+	}
+
+	// --------------------------------------------------------------------
+	
 }	
 ?>

@@ -47,6 +47,11 @@ $route['forthcoming'] = 'welcome/type/forthcoming/';
 $route['released'] = 'welcome/type/released/';
 $route['classic'] = 'welcome/type/classic/';
 
+$route['artist/add'] = 'artist/op/add';
+$route['artist/edit/(:any)'] = 'artist/op/edit/$1';
+$route['track/add'] = 'track/op/add';
+$route['track/edit/(:any)'] = 'track/op/edit/$1';
+
 $route['login'] = "auth/login";
 $route['logout'] = "auth/logout";
 
