@@ -8,11 +8,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=8" />
 
         <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/core.css" />
-		<?php if (base_url() == 'http://dnbmachine.com/'): ?>
+		<script type="text/javascript" src="<?php if (base_url() == 'http://dnbmachine.com/'): ?>
 		http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js
 		<?php else: ?>
-		<script type="text/javascript" src="<?php echo base_url(); ?>assets/javascripts/jquery/jquery.min.js"></script>
+		<?php echo base_url(); ?>assets/javascripts/jquery/jquery.min.js
 		<?php endif; ?>
+		"></script>
 </head>
 
 <body id="bg<?php echo rand(1,6); ?>">
