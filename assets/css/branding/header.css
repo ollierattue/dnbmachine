@@ -1,0 +1,30 @@
+/*-------------------------------------------------------
+	Header
+-------------------------------------------------------*/
+
+.header {
+	display: block;
+	clear: both;
+	}
+	.header h1 {
+
+		width:375px;
+		height:44px;
+		text-indent:-999em;
+		background-color: transparent;
+		background:url(/images/logo.png) 0 0 no-repeat;
+	    }
+		.header h1 a {
+		    display: block;
+		    height: 100%;
+		    outline: none;
+			}
+	.header span.login {
+		display: block;
+		float: right;
+		margin-top: -60px;
+		}
+		.header span.login a {
+			color: #ffffff !important;
+			font-size: 17px;
+			}

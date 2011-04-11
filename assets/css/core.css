@@ -1,0 +1,109 @@
+/* =Importing rules
+-------------------------------------------------------*/
+
+@import url(branding/header.css);
+@import url(branding/footer.css);
+@import url(modules/flash_data.css);
+@import url(modules/development.css);
+
+@import url(generic/reset.css);
+@import url(generic/helpers.css);
+
+/* =Elements
+-------------------------------------------------------*/
+
+html,
+body {
+	width: auto;
+	margin: 0px auto;
+	}
+	body {
+		text-align:left;
+		font-family: Helvetica Neue,Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		font-style:	normal;
+		color:#333333;
+		font-size: 14px;
+		background-image:url("/images/bg7.png");
+		background-repeat:no-repeat;
+		background-attachment: fixed;
+		background-color: #000000;
+		padding: 20px;
+		}
+		body#bg1 {
+			background-image:url("/images/bg1.jpg") !important;
+			}
+		body#bg2 {
+			background-image:url("/images/bg2.png") !important;
+			}
+		body#bg3 {
+			background-image:url("/images/bg3.png") !important;
+			}
+		body#bg4 {
+			background-image:url("/images/bg4.png") !important;
+			}
+		body#bg5 {
+			background-image:url("/images/bg5.png") !important;
+			}
+		body#bg6 {
+			background-image:url("/images/bg6.jpg") !important;
+			}	
+										
+		a:link {
+		color:#333333;
+		text-decoration:none;
+		}
+	a:visited {
+		text-decoration:none;
+		color:#333333;
+		}
+	a:hover {
+		text-decoration:none;
+		color:#6699CC !important;
+		}
+	a:active {
+		text-decoration:none;
+		outline:none;
+		}
+	h1, h2, h3, h4, h5, h6 {
+		padding:0 0 .6em;
+		line-height:1;
+		/*font-weight:bold;*/
+		color:#000000;
+		font-family: Helvetica Neue,Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif; 
+		}
+		h1 {font-size:30px; padding: 0 0 31px 0 !important;}
+		h2 {font-size:26px;}
+		h3 {font-size:16px; padding: 20px 0;}
+		h4 {font-size:14px;}
+	p {
+		font-family: Helvetica Neue,Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif; 
+		font-size: 14px;
+		margin: 10px 0;
+		padding: 0px;
+		}
+
+/* =Layout elements
+-------------------------------------------------------*/
+div.page-wrapper {
+	width:690px;
+	margin:20px auto 0 auto;
+	clear: both;
+	}
+	div.page-wrapper div.column-left {
+		float: left;
+		width: 500px;
+		background-color: rgba(255, 255, 255, 0.8);
+		padding: 20px;
+		margin-bottom: 50px;
+		min-height: 300px;
+		-moz-border-radius-topleft: 10px;
+		}
+	div.page-wrapper div.column-right {
+		float: left;
+		width: 110px;
+		background-color: rgba(221, 238, 246, 0.8);
+		padding: 20px;
+		-moz-border-radius-topright: 10px;
+		}
