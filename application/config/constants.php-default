@@ -45,7 +45,7 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 */
 
 define('WEBSITE_NAME','dnb machine');
-define('SLOGAN', "following the music lifecycle");
+define('SLOGAN', "following the music life cycle");
 define('META_DESCRIPTION', '');
 define('META_KEYWORDS', '');
 define('SYSTEM_EMAIL',"system@dnbmachine.com");
