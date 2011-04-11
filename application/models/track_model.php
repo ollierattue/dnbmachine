@@ -35,8 +35,8 @@ class Track_model extends CI_Model
 		switch($action)
 		{
 			case "add":
-				$artist_data['track_url_slug'] = create_slug($track_data['track_name']);
-				$artist_data["track_added"]	= date("Y-m-d H:i:s");
+				$track_data['track_url_slug'] = create_slug($track_data['track_name']);
+				$track_data["track_added"]	= date("Y-m-d H:i:s");
 				
 				$this->db->insert($this->_table['tracks'], $track_data);
 
@@ -48,7 +48,7 @@ class Track_model extends CI_Model
 			break;
 
 			case "edit":
-				$artist_data["track_modified"] = date("Y-m-d H:i:s");
+				$track_data["track_modified"] = date("Y-m-d H:i:s");
 				
 				$this->db->where('artist_url_slug', $artist_url_slug);
 				$this->db->update($this->_table['artists'], $artist_data);
