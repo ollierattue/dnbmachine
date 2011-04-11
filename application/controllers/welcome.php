@@ -8,7 +8,7 @@ class Welcome extends CI_Controller {
 			
 		$this->load->model('track_model');
 		$this->load->model('artist_model');
-		$this->load->model('track_type_model');
+		$this->load->model('track_statuses_model');
 			
 		if (ENABLE_PROFILER == TRUE)
 		{
@@ -18,19 +18,19 @@ class Welcome extends CI_Controller {
 	
 	// --------------------------------------------------------------------
 		
-	function index($type = 'forthcoming')
+	function index($track_status = 'forthcoming')
 	{
 		$this->data['results'] = $this->track_model->get('forthcoming');
-		$this->data['type'] = $type;
+		$this->data['track_status'] = $track_status;
 		build_page('welcome/index/index', $this->data, NULL, 'homepage');
 	}
 	
 	// --------------------------------------------------------------------
 
-	function type($type = 'forthcoming')
+	function type($track_status = 'forthcoming')
 	{
-		$this->data['type'] = $type;
-		$this->data['results'] = $this->track_model->get($type);
+		$this->data['track_status'] = $track_status;
+		$this->data['results'] = $this->track_model->get($track_status);
 		build_page('welcome/index/index', $this->data, NULL, 'homepage');
 	}
 	

@@ -1,4 +1,4 @@
-<h2><?php echo $type; ?></h2>
+<h2><?php echo $track_status; ?></h2>
 
 <?php if ($results->num_rows() == 0): ?>
 Nothing is ready to roll. Try another category.
@@ -17,5 +17,4 @@ Nothing is ready to roll. Try another category.
 <?php endif; ?>
 
 <?php endforeach; ?>
-
 <?php endif; ?>

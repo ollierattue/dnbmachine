@@ -12,7 +12,7 @@
 
 $config['artists']					= "artists";
 $config['tracks']					= "tracks";
-$config['track_types']				= "track_types";
+$config['track_statuses']			= "track_statuses";
 
 // Auth
 

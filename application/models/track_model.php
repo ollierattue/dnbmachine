@@ -13,16 +13,16 @@ class Track_model extends CI_Model
 	
 	// --------------------------------------------------------------------
 	
-	function get($type = NULL)
+	function get($track_status = NULL)
 	{
 		$this->db->select('*');
        	$this->db->from($this->_table['tracks']);
 		$this->db->join($this->_table['artists'], "{$this->_table['artists']}.artist_id = {$this->_table['tracks']}.track_artist_id", 'left');
-		$this->db->join($this->_table['track_types'], "{$this->_table['track_types']}.track_type_id = {$this->_table['tracks']}.track_type_id", 'left');
+		$this->db->join($this->_table['track_statuses'], "{$this->_table['track_statuses']}.track_status_id = {$this->_table['tracks']}.track_status_id", 'left');
 		
-		if ($type)
+		if ($track_status)
 		{
-			$this->db->where("{$this->_table['track_types']}.track_type_slug", $type);
+			$this->db->where("{$this->_table['track_statuses']}.track_status_slug", $track_status);
 		}
 		
 		return $this->db->get();

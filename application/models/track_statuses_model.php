@@ -1,6 +1,6 @@
 <?php
 
-class Track_type_model extends CI_Model 
+class Track_statuses_model extends CI_Model 
 {	
 	// Protected or private properties
 	protected $_table;
@@ -15,7 +15,7 @@ class Track_type_model extends CI_Model
 	
 	function get()
 	{
-		return $this->db->count_all($this->_table['barometers']);
+
 	}
 
 	// --------------------------------------------------------------------

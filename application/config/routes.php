@@ -44,7 +44,6 @@ $route['404_override'] = '';
 $route['unsigned'] = 'welcome/type/unsigned/';
 $route['dub'] = 'welcome/type/dub/';
 $route['forthcoming'] = 'welcome/type/forthcoming/';
-$route['release_date_set'] = 'welcome/type/release_date_set/';
 $route['released'] = 'welcome/type/released/';
 $route['classic'] = 'welcome/type/classic/';
 
