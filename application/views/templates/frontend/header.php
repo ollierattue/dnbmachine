@@ -4,8 +4,7 @@
 <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>dnb machine - from birth to release</title>
-        <meta name="keywords" content="" />
-        <meta name="description" content="." />
+        <meta name="description" content="<?php echo META_DESCRIPTION; ?>" />
         <meta http-equiv="X-UA-Compatible" content="IE=8" />
 
         <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/core.css" />
