@@ -30,7 +30,7 @@ class Track_model extends CI_Model
 			$this->db->where('track_url_slug', $track_url_slug);
 		}
 		
-		
+		$this->db->order_by('track_added', 'desc');
 		return $this->db->get();
 	}
 
