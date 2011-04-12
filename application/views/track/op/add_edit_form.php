@@ -18,6 +18,12 @@ echo form_open("track/op/{$action}/{$track_data['track_url_slug']}", $attributes
 </p>                                             
                         
 <p>
+        <label for="track_record_label_id">Record label</label>
+        <?php echo form_error('track_record_label_id'); ?>
+        <br /><?php echo form_dropdown('track_record_label_id', $record_label_select_options, set_value('track_record_label_id', $track_data['track_record_label_id']))?>
+</p>
+	
+<p>
         <label for="track_status_id">Status</label>
         <?php echo form_error('track_status_id'); ?>
         <br /><?php echo form_dropdown('track_status_id', $track_status_select_options, set_value('track_status_id', $track_data['track_status_id']))?>
@@ -45,6 +51,12 @@ echo form_open("track/op/{$action}/{$track_data['track_url_slug']}", $attributes
         <label for="track_youtube_id">YouTube id</label>
         <?php echo form_error('track_youtube_id'); ?>
         <br /><input id="track_youtube_id" type="text" name="track_youtube_id" maxlength="20" value="<?php echo set_value('track_youtube_id', $track_data['track_youtube_id']); ?>"  />
+</p>
+
+<p>
+        <label for="track_buy_url">Buy url (include http://)</label>
+        <?php echo form_error('track_buy_url'); ?>
+        <br /><input id="track_buy_url" type="text" name="track_buy_url" maxlength="400" value="<?php echo set_value('track_buy_url', $track_data['track_buy_url']); ?>"  />
 </p>
 
 	<p>

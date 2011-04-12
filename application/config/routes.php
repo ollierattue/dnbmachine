@@ -45,6 +45,7 @@ $route['unsigned'] = 'welcome/type/unsigned/';
 $route['dub'] = 'welcome/type/dub/';
 $route['forthcoming'] = 'welcome/type/forthcoming/';
 $route['released'] = 'welcome/type/released/';
+$route['free'] = 'welcome/type/free/';
 $route['classic'] = 'welcome/type/classic/';
 
 $route['artist/add'] = 'artist/op/add';

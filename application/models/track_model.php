@@ -54,6 +54,7 @@ class Track_model extends CI_Model
 			break;
 
 			case "edit":
+				$track_data['track_url_slug'] = create_slug($track_data['track_name']);
 				$track_data["track_modified"] = date("Y-m-d H:i:s");
 				
 				$this->db->where('track_url_slug', $track_url_slug);

@@ -6,6 +6,7 @@
 										<li><a href="<?php echo base_url(); ?>dub">dub</a><li>
 										<li><a href="<?php echo base_url(); ?>forthcoming">forthcoming</a></li>
 										<li><a href="<?php echo base_url(); ?>released">released</a></li>
+										<li><a href="<?php echo base_url(); ?>free">free</a></li>
 										<li><a href="<?php echo base_url(); ?>classic">classic</a></li>
                                   	</ul>
 

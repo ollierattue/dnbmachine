@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 11, 2011 at 12:56 PM
+-- Generation Time: Apr 12, 2011 at 04:26 PM
 -- Server version: 5.0.51
 -- PHP Version: 5.2.5
 
@@ -31,6 +31,7 @@ CREATE TABLE IF NOT EXISTS `tracks` (
   `track_name` varchar(300) NOT NULL,
   `track_url_slug` varchar(200) default NULL,
   `track_artist_id` int(10) default NULL,
+  `track_record_label_id` int(3) default NULL,
   `track_status_id` int(2) default NULL,
   `track_soundcloud_url` varchar(500) default NULL,
   `track_soundcloud_id` varchar(20) default NULL,
@@ -38,7 +39,9 @@ CREATE TABLE IF NOT EXISTS `tracks` (
   `track_youtube_id` varchar(20) default NULL,
   `track_release_date` datetime default NULL,
   `track_release_year` int(2) default NULL,
+  `track_release_label` int(3) default NULL,
+  `track_buy_url` varchar(400) default NULL,
   `track_added` datetime default NULL,
   `track_modified` datetime default NULL,
   PRIMARY KEY  (`track_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=86 ;
