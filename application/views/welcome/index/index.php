@@ -14,6 +14,9 @@ Nothing is ready to roll. Try another category.
 
 <?php elseif ($row->track_youtube_id): ?>
 <object width="480" height="25"><param name="movie" value="http://www.youtube.com/v/<?php echo $row->track_youtube_id; ?>?fs=1&amp;hl=en_GB&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/<?php echo $row->track_youtube_id; ?>?fs=1&amp;hl=en_GB&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="25"></embed></object>
+
+<?php else: ?>
+<p>Awaiting track sample.</p>
 <?php endif; ?>
 
 <?php endforeach; ?>
