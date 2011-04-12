@@ -37,7 +37,7 @@ class Track extends CI_Controller
 												'track_name' 				=> NULL,
 												'track_url_slug'			=> NULL,
 												'track_artist_id' 			=> NULL,
-												'track_label_id'			=> NULL,
+												'track_record_label_id'		=> NULL,
 												'track_status_id' 			=> NULL,
 												'track_soundcloud_url' 		=> NULL,
 												'track_soundcloud_id' 		=> NULL,
